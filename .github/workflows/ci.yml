@@ -9,7 +9,7 @@ on:
 jobs:
   test-and-report:
     name: Run Tests & Generate Report
-    runs-on: ubuntu-22.04  # ✅ Use stable runner image
+    runs-on: ubuntu-22.04
 
     steps:
       - name: 📥 Checkout repository
@@ -32,7 +32,7 @@ jobs:
         run: python log_monitor.py
 
       - name: 📤 Upload report.html as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2.3.1  # ✅ Stable & compatible
         with:
           name: log-monitor-report
           path: report.html
