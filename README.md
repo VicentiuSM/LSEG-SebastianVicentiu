@@ -1,7 +1,9 @@
 # 📊 LSEG Log Monitoring Application
 
+[![Python CI] (https://github.com/VicentiuSM/LSEG-SebastianVicentiu/actions)
+
 A Python application that parses log files, calculates job execution durations, and detects long-running jobs.  
-This solution demonstrates structured problem-solving, clean and modular code, time-based analysis, and automatic reporting via a generated HTML dashboard.
+This solution demonstrates structured problem-solving, modular code, test coverage, and automated reporting via an HTML dashboard.
 
 ---
 
@@ -15,14 +17,25 @@ This solution demonstrates structured problem-solving, clean and modular code, t
     - ⚠️ `WARNING` if duration > 5 minutes
     - ❌ `ERROR` if duration > 10 minutes
 - Displays a summary in the console
-- Generates a standalone HTML report (`report.html`)
-- Opens the report automatically in your default web browser
+- Generates an offline HTML report (`report.html`)
+- Opens the report automatically in the browser
+- Includes unit test coverage with `pytest`
+- GitHub Actions CI pipeline for continuous integration
 
 ---
 
-## 🚀 How to Run
+## 🚀 How to Run Locally
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-user/LSEG.git
-   cd LSEG
+### 1. Clone the repository
+```bash
+git clone https://github.com/VicentiuSM/LSEG-SebastianVicentiu.git
+cd LSEG-SebastianVicentiu
+```
+### 2. Clone the repository
+```bash
+pip install -r requirements.txt
+```
+### 3. Clone the repository
+```bash
+python log_monitor.py
+```
