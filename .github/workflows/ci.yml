@@ -42,7 +42,7 @@ jobs:
         # Runs the main script to generate report.html
 
       - name: 📤 Upload report.html as artifact
-        uses: actions/upload-artifact@v2  # ✅ Use v2 for compatibility
+        uses: actions/upload-artifact@v3.1.2  # ✅ Use stable version for compatibility
         with:
           name: log-monitor-report
           path: report.html
