@@ -31,11 +31,11 @@ This solution demonstrates structured problem-solving, modular code, test covera
 git clone https://github.com/VicentiuSM/LSEG-SebastianVicentiu.git
 cd LSEG-SebastianVicentiu
 ```
-### 2. Clone the repository
+### 2. Install required dependencies
 ```bash
 pip install -r requirements.txt
 ```
-### 3. Clone the repository
+### 3. Run the application
 ```bash
 python log_monitor.py
 ```
