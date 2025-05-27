@@ -3,7 +3,7 @@
 # Runs tests and generates HTML report on every push or pull request to main
 # ----------------------------------------
 
-name: Python CI
+name: Log Parser
 
 on:
   push:
